@@ -1,0 +1,28 @@
+services:
+  portainer:
+    image: portainer/portainer-ce:latest
+    container_name: portainer # Matches --name=portainer
+    restart: always # Matches --restart=always (you could also use 'unless-stopped')
+    ports:
+      - "9443:9443" # For HTTPS access
+    volumes:
+      # This gives Portainer access to the Docker socket to manage Docker
+      - /var/run/docker.sock:/var/run/docker.sock
+      # This uses a named volume 'portainer_data' to persist Portainer's data
+      - data:/data
+    networks:
+      # It's good practice to add Portainer to your shared network
+      # if you want consistency, though it can manage Docker regardless.
+      - pi_net
+
+# Top-level 'volumes' declaration for the named volume used by the service
+volumes:
+  data:
+    # Docker will manage this volume. No specific driver needed unless you have advanced needs.
+    # If you wanted to use a pre-existing volume created with 'docker volume create portainer_data',
+    # you would add 'external: true' here. Otherwise, Docker Compose creates it.
+
+# Top-level 'networks' declaration to use your existing external network
+networks:
+  pi_net:
+    external: true
