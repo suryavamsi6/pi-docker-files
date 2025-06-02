@@ -6,52 +6,52 @@ updates:
     schedule:
       interval: "daily"
 
-  - package-ecosystem: "docker"
+  - package-ecosystem: "docker-compose"
     directory: "/beszel-agent"
     schedule:
       interval: "daily"
 
-  - package-ecosystem: "docker"
+  - package-ecosystem: "docker-compose"
     directory: "/beszel"
     schedule:
       interval: "daily"
 
-  - package-ecosystem: "docker"
+  - package-ecosystem: "docker-compose"
     directory: "/glance"
     schedule:
       interval: "daily"
 
-  - package-ecosystem: "docker"
+  - package-ecosystem: "docker-compose"
     directory: "/homeassistant"
     schedule:
       interval: "daily"
 
-  - package-ecosystem: "docker"
+  - package-ecosystem: "docker-compose"
     directory: "/nginx"
     schedule:
       interval: "daily"
 
-  - package-ecosystem: "docker"
+  - package-ecosystem: "docker-compose"
     directory: "/pihole"
     schedule:
       interval: "daily"
 
-  - package-ecosystem: "docker"
+  - package-ecosystem: "docker-compose"
     directory: "/portainer"
     schedule:
       interval: "daily"
 
-  - package-ecosystem: "docker"
+  - package-ecosystem: "docker-compose"
     directory: "/speedtest-tracker"
     schedule:
       interval: "daily"
 
-  - package-ecosystem: "docker"
+  - package-ecosystem: "docker-compose"
     directory: "/unbound"
     schedule:
       interval: "daily"
 
-  - package-ecosystem: "docker"
+  - package-ecosystem: "docker-compose"
     directory: "/watchtower"
     schedule:
       interval: "daily"
