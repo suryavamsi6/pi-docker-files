@@ -1,0 +1,57 @@
+# .github/dependabot.yml
+version: 2
+updates:
+  - package-ecosystem: "docker"
+    directory: "/actual"
+    schedule:
+      interval: "daily"
+
+  - package-ecosystem: "docker"
+    directory: "/beszel-agent"
+    schedule:
+      interval: "daily"
+
+  - package-ecosystem: "docker"
+    directory: "/beszel"
+    schedule:
+      interval: "daily"
+
+  - package-ecosystem: "docker"
+    directory: "/glance"
+    schedule:
+      interval: "daily"
+
+  - package-ecosystem: "docker"
+    directory: "/homeassistant"
+    schedule:
+      interval: "daily"
+
+  - package-ecosystem: "docker"
+    directory: "/nginx"
+    schedule:
+      interval: "daily"
+
+  - package-ecosystem: "docker"
+    directory: "/pihole"
+    schedule:
+      interval: "daily"
+
+  - package-ecosystem: "docker"
+    directory: "/portainer"
+    schedule:
+      interval: "daily"
+
+  - package-ecosystem: "docker"
+    directory: "/speedtest-tracker"
+    schedule:
+      interval: "daily"
+
+  - package-ecosystem: "docker"
+    directory: "/unbound"
+    schedule:
+      interval: "daily"
+
+  - package-ecosystem: "docker"
+    directory: "/watchtower"
+    schedule:
+      interval: "daily"
